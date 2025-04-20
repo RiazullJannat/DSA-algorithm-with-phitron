@@ -8,13 +8,17 @@ int main()
     {
         scanf("%d", &arr[i]);
     }
-    int index;
-    scanf("%d", &index);
-    for (int i = index; i < n; i++)
+    int i=0, j=n-1;
+    while (i<j)
     {
-        arr[i] = arr[i + 1];
+        int tem= arr[i];
+        arr[i]=arr[j];
+        arr[j]=tem;
+        i++;
+        j--;
     }
-    for (int i = 0; i < n - 1; i++)
+    
+    for (int i = 0; i < n; i++)
     {
         printf("%d ", arr[i]);
     }
