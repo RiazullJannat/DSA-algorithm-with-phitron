@@ -14,9 +14,9 @@ int main()
     }
     int haveToPrint;
     scanf("%d", &haveToPrint);
-    for (int i = 0; i < col; i++)
+    for (int i = 0; i < row; i++)
     {
-        printf("%d ", array[haveToPrint][i]);
+        printf("%d ", array[i][haveToPrint]);
     }
     return 0;
 }
