@@ -1,1 +1,1 @@
-not primary diagonal matrix.
+not secondary diagonal matrix.
