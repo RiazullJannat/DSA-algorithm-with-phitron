@@ -11,12 +11,13 @@ int main()
     }
     else
     {
-        row = 5 + n - 2;
+        row = ((n - 1) / 2) + 6;
     }
-    int gap = row-1;
-    for (int i = 1; i <= n; i++)
+    int gap = row - 1;
+    int gap2 = 5;
+    for (int i = 1; i <= row; i++)
     {
-        for (int j =1; j <= gap; j++)
+        for (int j = 1; j <= gap; j++)
         {
             printf(" ");
         }
@@ -26,10 +27,20 @@ int main()
             printf("*");
         }
         printf("\n");
-        star+=2;
+        star += 2;
         gap--;
     }
-
-    int gap = 5;
+    for (int j = 0; j < gap2; j++)
+    {
+        for (int i = 0; i < gap2; i++)
+        {
+            printf(" ");
+        }
+        for (int i = 0; i < n; i++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
     return 0;
 }
